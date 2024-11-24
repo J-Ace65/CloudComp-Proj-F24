@@ -1,0 +1,6 @@
+framework module Pods_Video_Audio_Translator_Video_Audio_TranslatorUITests {
+  umbrella header "Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

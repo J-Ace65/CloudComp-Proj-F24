@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A086A6A8E0A37DD0FC892F865802DB64 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS" */;
+			buildPhases = (
+				A68FA835EC2580FD50EC4E720D5DC8EB /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "MicrosoftCognitiveServicesSpeech-iOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0D8547936E8C7A087801999CF0B9791B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		1E7580E407D73DFEEF7E3DE4035397A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		1F3C922D66F5CC393D3CB7BFCD980E9D /* Pods-Video Audio TranslatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8ADA413AAC470F16087F7B16684481 /* Pods-Video Audio TranslatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D7713C3BCFB0ABA37BA773C0F8B54E5 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1EDEF7B57B056A60117EC8198A969F /* Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		862CA9920C1DD1EC2BD7616F01AC2D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		9D85BA49B8A2458D2B7F2E15ADE3E63C /* Pods-Video Audio Translator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9AF3887828B854D9A163FF2B22F142 /* Pods-Video Audio Translator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A74EDD73AE701E439FB7D3835B740079 /* Pods-Video Audio Translator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F355F50902AACDC8C2060F4B950FC3F /* Pods-Video Audio Translator-dummy.m */; };
+		AFA364550C70D391901C5AC7C6C9EE96 /* Pods-Video Audio TranslatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E9152BE1A6AB9F6B73BEED850B2F5 /* Pods-Video Audio TranslatorTests-dummy.m */; };
+		FD57ADD25C5F7ECAFA6FC5B46408ABCB /* Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A07D124990DAE1A517D0648BE2A95BA5 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4792C921581539704A9E79EDF58EB558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97D3B6926BF0A2ABAB7F043559FA98A9;
+			remoteInfo = "MicrosoftCognitiveServicesSpeech-iOS";
+		};
+		6759CE414AEC9D0E6BDD48B6F3245CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF4710B77C7C8D38DBD1E14F03F533C;
+			remoteInfo = "Pods-Video Audio Translator";
+		};
+		6C9890BDED12F0E91A21A7E6B843ED8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97D3B6926BF0A2ABAB7F043559FA98A9;
+			remoteInfo = "MicrosoftCognitiveServicesSpeech-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B309B8666986AD9C9FB0221F1D6B5B /* MicrosoftCognitiveServicesSpeech-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MicrosoftCognitiveServicesSpeech-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1055FED0545AE437EC691DED7FCCC9D9 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-Info.plist"; sourceTree = "<group>"; };
+		2DE8C1A7D8BDDBE4D1BD13918D3084E4 /* Pods-Video Audio TranslatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Video Audio TranslatorTests.modulemap"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BED35F85081AB9C790CB66E9D12ADB3 /* Pods-Video Audio TranslatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Audio TranslatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C2C15235C8D86720C315F8150511E63 /* MicrosoftCognitiveServicesSpeech-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MicrosoftCognitiveServicesSpeech-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		40CCD696A7F35546E559507A57895EEA /* Pods-Video Audio TranslatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio TranslatorTests-Info.plist"; sourceTree = "<group>"; };
+		41D2EF4C2ECDF54DD3806138F9436071 /* Pods-Video Audio Translator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio Translator-Info.plist"; sourceTree = "<group>"; };
+		49FE8A829815EC39BAD19B2263016F72 /* Pods-Video Audio Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio Translator.release.xcconfig"; sourceTree = "<group>"; };
+		4C8116AA1CF4B65A21CB506B3E7622E4 /* Pods-Video Audio Translator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio Translator-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F9090046AF23279DF67BA20DA84AFD7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests.modulemap"; sourceTree = "<group>"; };
+		58E27837BF8BDC6D6C90D733F67A3679 /* MicrosoftCognitiveServicesSpeech.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MicrosoftCognitiveServicesSpeech.xcframework; sourceTree = "<group>"; };
+		5F355F50902AACDC8C2060F4B950FC3F /* Pods-Video Audio Translator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Video Audio Translator-dummy.m"; sourceTree = "<group>"; };
+		73560F245C6296375A38121FAF04ABE5 /* Pods-Video Audio Translator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Video Audio Translator.modulemap"; sourceTree = "<group>"; };
+		74453C2A8A76525A13EAB397A772E1C7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AD5311B9C93226F8A1F48146C2AF2F9 /* MicrosoftCognitiveServicesSpeech-iOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MicrosoftCognitiveServicesSpeech-iOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		7D1EDEF7B57B056A60117EC8198A969F /* Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		7E9AF3887828B854D9A163FF2B22F142 /* Pods-Video Audio Translator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Video Audio Translator-umbrella.h"; sourceTree = "<group>"; };
+		7F00815A6788D4E919992F7D8006FBFC /* Pods-Video Audio TranslatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio TranslatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8ABA31DF0AF12D72975433C6AFB11C93 /* Pods-Video Audio TranslatorTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Video Audio TranslatorTests"; path = Pods_Video_Audio_TranslatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C73CE68A024423B8A7C205E5D92A3B /* Pods-Video Audio Translator-Video Audio TranslatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A07D124990DAE1A517D0648BE2A95BA5 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m"; sourceTree = "<group>"; };
+		A40CB58D6FB4BBEA646F791700386E18 /* Pods-Video Audio Translator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Audio Translator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A47FE3AAE3EBAB0DF7D47962A93A4EC9 /* Pods-Video Audio Translator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Video Audio Translator-frameworks.sh"; sourceTree = "<group>"; };
+		A898B0099A6C4AC63D7FA16D21DFBD9A /* Pods-Video Audio Translator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Video Audio Translator"; path = Pods_Video_Audio_Translator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE75E5F50D83E307AE09576984AE6AA /* Pods-Video Audio Translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio Translator.debug.xcconfig"; sourceTree = "<group>"; };
+		B878A89D365A7C755B0F0A18F4738A8E /* Pods-Video Audio TranslatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Audio TranslatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA8ADA413AAC470F16087F7B16684481 /* Pods-Video Audio TranslatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Video Audio TranslatorTests-umbrella.h"; sourceTree = "<group>"; };
+		C823CB987DBB9BF9C89C6D42CBB1E503 /* Pods-Video Audio Translator-Video Audio TranslatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7428E69530D15CE92032E2DD7063DE7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7ECD2483CC3F2CAB60E1F3EC33F0E25 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Video Audio Translator-Video Audio TranslatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DD8E9152BE1A6AB9F6B73BEED850B2F5 /* Pods-Video Audio TranslatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Video Audio TranslatorTests-dummy.m"; sourceTree = "<group>"; };
+		E3357A4AC83DCF2203AF7FCFDE99CF80 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Video Audio Translator-Video Audio TranslatorUITests"; path = Pods_Video_Audio_Translator_Video_Audio_TranslatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F503D27BC59D1A51FCDD1492435B333C /* Pods-Video Audio TranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Audio TranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29E4332D110C626D441F9492A0C57F32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8547936E8C7A087801999CF0B9791B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B2784F3EAEF63F916750E7245CCF6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862CA9920C1DD1EC2BD7616F01AC2D22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D1866A5168D76618CBDE842601FFB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7580E407D73DFEEF7E3DE4035397A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E1771BA2EFAE07A111504C5BAC132C5 /* MicrosoftCognitiveServicesSpeech-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D68FFDC90C9ECAEE1BC47FBDE825FA71 /* Frameworks */,
+				931C5CDED088F9AE7EA013098F892B35 /* Support Files */,
+			);
+			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			path = "MicrosoftCognitiveServicesSpeech-iOS";
+			sourceTree = "<group>";
+		};
+		45ADEA7B215C4C2EEDA0A98BFD666E2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A898B0099A6C4AC63D7FA16D21DFBD9A /* Pods-Video Audio Translator */,
+				E3357A4AC83DCF2203AF7FCFDE99CF80 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */,
+				8ABA31DF0AF12D72975433C6AFB11C93 /* Pods-Video Audio TranslatorTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDA2FC7F0D228FED439B6BFCABFEECD /* Pods-Video Audio TranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8C1A7D8BDDBE4D1BD13918D3084E4 /* Pods-Video Audio TranslatorTests.modulemap */,
+				3BED35F85081AB9C790CB66E9D12ADB3 /* Pods-Video Audio TranslatorTests-acknowledgements.markdown */,
+				B878A89D365A7C755B0F0A18F4738A8E /* Pods-Video Audio TranslatorTests-acknowledgements.plist */,
+				DD8E9152BE1A6AB9F6B73BEED850B2F5 /* Pods-Video Audio TranslatorTests-dummy.m */,
+				40CCD696A7F35546E559507A57895EEA /* Pods-Video Audio TranslatorTests-Info.plist */,
+				BA8ADA413AAC470F16087F7B16684481 /* Pods-Video Audio TranslatorTests-umbrella.h */,
+				7F00815A6788D4E919992F7D8006FBFC /* Pods-Video Audio TranslatorTests.debug.xcconfig */,
+				F503D27BC59D1A51FCDD1492435B333C /* Pods-Video Audio TranslatorTests.release.xcconfig */,
+			);
+			name = "Pods-Video Audio TranslatorTests";
+			path = "Target Support Files/Pods-Video Audio TranslatorTests";
+			sourceTree = "<group>";
+		};
+		931C5CDED088F9AE7EA013098F892B35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5311B9C93226F8A1F48146C2AF2F9 /* MicrosoftCognitiveServicesSpeech-iOS-xcframeworks.sh */,
+				02B309B8666986AD9C9FB0221F1D6B5B /* MicrosoftCognitiveServicesSpeech-iOS.debug.xcconfig */,
+				3C2C15235C8D86720C315F8150511E63 /* MicrosoftCognitiveServicesSpeech-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MicrosoftCognitiveServicesSpeech-iOS";
+			sourceTree = "<group>";
+		};
+		B8F1FB067BFDF2A33E3DE018084E87A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E1771BA2EFAE07A111504C5BAC132C5 /* MicrosoftCognitiveServicesSpeech-iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDC5E4104219768B0BA0B0949632A687 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2913AABCFB477A21A6BAAA340D7B11B /* Pods-Video Audio Translator */,
+				D61C005F2E3F4726A030E3CEB1FB2DC7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */,
+				4DDA2FC7F0D228FED439B6BFCABFEECD /* Pods-Video Audio TranslatorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B8F1FB067BFDF2A33E3DE018084E87A9 /* Pods */,
+				45ADEA7B215C4C2EEDA0A98BFD666E2A /* Products */,
+				CDC5E4104219768B0BA0B0949632A687 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D61C005F2E3F4726A030E3CEB1FB2DC7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F9090046AF23279DF67BA20DA84AFD7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests.modulemap */,
+				D7428E69530D15CE92032E2DD7063DE7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.markdown */,
+				74453C2A8A76525A13EAB397A772E1C7 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-acknowledgements.plist */,
+				A07D124990DAE1A517D0648BE2A95BA5 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m */,
+				D7ECD2483CC3F2CAB60E1F3EC33F0E25 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-frameworks.sh */,
+				1055FED0545AE437EC691DED7FCCC9D9 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-Info.plist */,
+				7D1EDEF7B57B056A60117EC8198A969F /* Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h */,
+				99C73CE68A024423B8A7C205E5D92A3B /* Pods-Video Audio Translator-Video Audio TranslatorUITests.debug.xcconfig */,
+				C823CB987DBB9BF9C89C6D42CBB1E503 /* Pods-Video Audio Translator-Video Audio TranslatorUITests.release.xcconfig */,
+			);
+			name = "Pods-Video Audio Translator-Video Audio TranslatorUITests";
+			path = "Target Support Files/Pods-Video Audio Translator-Video Audio TranslatorUITests";
+			sourceTree = "<group>";
+		};
+		D68FFDC90C9ECAEE1BC47FBDE825FA71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E27837BF8BDC6D6C90D733F67A3679 /* MicrosoftCognitiveServicesSpeech.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2913AABCFB477A21A6BAAA340D7B11B /* Pods-Video Audio Translator */ = {
+			isa = PBXGroup;
+			children = (
+				73560F245C6296375A38121FAF04ABE5 /* Pods-Video Audio Translator.modulemap */,
+				A40CB58D6FB4BBEA646F791700386E18 /* Pods-Video Audio Translator-acknowledgements.markdown */,
+				4C8116AA1CF4B65A21CB506B3E7622E4 /* Pods-Video Audio Translator-acknowledgements.plist */,
+				5F355F50902AACDC8C2060F4B950FC3F /* Pods-Video Audio Translator-dummy.m */,
+				A47FE3AAE3EBAB0DF7D47962A93A4EC9 /* Pods-Video Audio Translator-frameworks.sh */,
+				41D2EF4C2ECDF54DD3806138F9436071 /* Pods-Video Audio Translator-Info.plist */,
+				7E9AF3887828B854D9A163FF2B22F142 /* Pods-Video Audio Translator-umbrella.h */,
+				ABE75E5F50D83E307AE09576984AE6AA /* Pods-Video Audio Translator.debug.xcconfig */,
+				49FE8A829815EC39BAD19B2263016F72 /* Pods-Video Audio Translator.release.xcconfig */,
+			);
+			name = "Pods-Video Audio Translator";
+			path = "Target Support Files/Pods-Video Audio Translator";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD6E3030A35DD04ED3E37FDC67DC81F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3C922D66F5CC393D3CB7BFCD980E9D /* Pods-Video Audio TranslatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1214EB8DFC71712425FC1C3413708F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7713C3BCFB0ABA37BA773C0F8B54E5 /* Pods-Video Audio Translator-Video Audio TranslatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7D8A8FD52745A87D7A294D05DD9C6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D85BA49B8A2458D2B7F2E15ADE3E63C /* Pods-Video Audio Translator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EF4710B77C7C8D38DBD1E14F03F533C /* Pods-Video Audio Translator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3BEFD501ECD6855EC766C582EE5144 /* Build configuration list for PBXNativeTarget "Pods-Video Audio Translator" */;
+			buildPhases = (
+				FA7D8A8FD52745A87D7A294D05DD9C6C /* Headers */,
+				67C5D6C0651481C55A7EEB9B3EFA7168 /* Sources */,
+				43B2784F3EAEF63F916750E7245CCF6D /* Frameworks */,
+				64D9C151C25E73049382BE76430F7699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3A464123252E68432EECA15D4D8303 /* PBXTargetDependency */,
+			);
+			name = "Pods-Video Audio Translator";
+			productName = Pods_Video_Audio_Translator;
+			productReference = A898B0099A6C4AC63D7FA16D21DFBD9A /* Pods-Video Audio Translator */;
+			productType = "com.apple.product-type.framework";
+		};
+		677B661445478B590CAA5A00B6B06C79 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB1A6B727079213F9DBD3B4469FE250 /* Build configuration list for PBXNativeTarget "Pods-Video Audio Translator-Video Audio TranslatorUITests" */;
+			buildPhases = (
+				E1214EB8DFC71712425FC1C3413708F5 /* Headers */,
+				C07F32E0A06260B3498C8F6DBFB88D04 /* Sources */,
+				B6D1866A5168D76618CBDE842601FFB6 /* Frameworks */,
+				CA61F8BBE0E2AE4048CD4A603B9C721D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CBD7546E609DAEB2E0DA6AF0D0F8167 /* PBXTargetDependency */,
+			);
+			name = "Pods-Video Audio Translator-Video Audio TranslatorUITests";
+			productName = Pods_Video_Audio_Translator_Video_Audio_TranslatorUITests;
+			productReference = E3357A4AC83DCF2203AF7FCFDE99CF80 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		86554CCF2FBDDD2860A0241568F4E43C /* Pods-Video Audio TranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE9D7AC049FD47993BE5EC41EE9B7C0 /* Build configuration list for PBXNativeTarget "Pods-Video Audio TranslatorTests" */;
+			buildPhases = (
+				AD6E3030A35DD04ED3E37FDC67DC81F2 /* Headers */,
+				68A952D0133AC45C5F846250F6C7B5BF /* Sources */,
+				29E4332D110C626D441F9492A0C57F32 /* Frameworks */,
+				38C4F65D4271984B4021512A9ACC60E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9697D05D00B8FD3262E11212AF9EB2B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Video Audio TranslatorTests";
+			productName = Pods_Video_Audio_TranslatorTests;
+			productReference = 8ABA31DF0AF12D72975433C6AFB11C93 /* Pods-Video Audio TranslatorTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 45ADEA7B215C4C2EEDA0A98BFD666E2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */,
+				0EF4710B77C7C8D38DBD1E14F03F533C /* Pods-Video Audio Translator */,
+				677B661445478B590CAA5A00B6B06C79 /* Pods-Video Audio Translator-Video Audio TranslatorUITests */,
+				86554CCF2FBDDD2860A0241568F4E43C /* Pods-Video Audio TranslatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38C4F65D4271984B4021512A9ACC60E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D9C151C25E73049382BE76430F7699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA61F8BBE0E2AE4048CD4A603B9C721D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A68FA835EC2580FD50EC4E720D5DC8EB /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech-iOS-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech-iOS-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech-iOS-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67C5D6C0651481C55A7EEB9B3EFA7168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74EDD73AE701E439FB7D3835B740079 /* Pods-Video Audio Translator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A952D0133AC45C5F846250F6C7B5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA364550C70D391901C5AC7C6C9EE96 /* Pods-Video Audio TranslatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07F32E0A06260B3498C8F6DBFB88D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD57ADD25C5F7ECAFA6FC5B46408ABCB /* Pods-Video Audio Translator-Video Audio TranslatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CBD7546E609DAEB2E0DA6AF0D0F8167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			target = 97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */;
+			targetProxy = 4792C921581539704A9E79EDF58EB558 /* PBXContainerItemProxy */;
+		};
+		9697D05D00B8FD3262E11212AF9EB2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Video Audio Translator";
+			target = 0EF4710B77C7C8D38DBD1E14F03F533C /* Pods-Video Audio Translator */;
+			targetProxy = 6759CE414AEC9D0E6BDD48B6F3245CF1 /* PBXContainerItemProxy */;
+		};
+		FE3A464123252E68432EECA15D4D8303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			target = 97D3B6926BF0A2ABAB7F043559FA98A9 /* MicrosoftCognitiveServicesSpeech-iOS */;
+			targetProxy = 6C9890BDED12F0E91A21A7E6B843ED8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06ED71150A541111002A1E8BC6147569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C73CE68A024423B8A7C205E5D92A3B /* Pods-Video Audio Translator-Video Audio TranslatorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio Translator-Video Audio TranslatorUITests/Pods-Video Audio Translator-Video Audio TranslatorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio Translator-Video Audio TranslatorUITests/Pods-Video Audio Translator-Video Audio TranslatorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		10C115186D43975D34874FE181995B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F00815A6788D4E919992F7D8006FBFC /* Pods-Video Audio TranslatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio TranslatorTests/Pods-Video Audio TranslatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio TranslatorTests/Pods-Video Audio TranslatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50AB6F1EFF134CEFC4B36B79E6BAC0A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE75E5F50D83E307AE09576984AE6AA /* Pods-Video Audio Translator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio Translator/Pods-Video Audio Translator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio Translator/Pods-Video Audio Translator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5994EB6D6EB4EC7C7303515C201556B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2C15235C8D86720C315F8150511E63 /* MicrosoftCognitiveServicesSpeech-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59E8734DA70715406493CA912F854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A49448602EC1B17D12ADB02D6EE73BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		61B2CAECA69D943866E413E8F2F5F259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B309B8666986AD9C9FB0221F1D6B5B /* MicrosoftCognitiveServicesSpeech-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99BBE5BD0BDA89BC09E47E6F8580B584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FE8A829815EC39BAD19B2263016F72 /* Pods-Video Audio Translator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio Translator/Pods-Video Audio Translator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio Translator/Pods-Video Audio Translator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5AA909846D8106FE032AC69E4F0DD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F503D27BC59D1A51FCDD1492435B333C /* Pods-Video Audio TranslatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio TranslatorTests/Pods-Video Audio TranslatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio TranslatorTests/Pods-Video Audio TranslatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF0FFD2D151CADAAC92E06AD2343B907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C823CB987DBB9BF9C89C6D42CBB1E503 /* Pods-Video Audio Translator-Video Audio TranslatorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Video Audio Translator-Video Audio TranslatorUITests/Pods-Video Audio Translator-Video Audio TranslatorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Video Audio Translator-Video Audio TranslatorUITests/Pods-Video Audio Translator-Video Audio TranslatorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E8734DA70715406493CA912F854277 /* Debug */,
+				5A49448602EC1B17D12ADB02D6EE73BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB1A6B727079213F9DBD3B4469FE250 /* Build configuration list for PBXNativeTarget "Pods-Video Audio Translator-Video Audio TranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06ED71150A541111002A1E8BC6147569 /* Debug */,
+				FF0FFD2D151CADAAC92E06AD2343B907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE9D7AC049FD47993BE5EC41EE9B7C0 /* Build configuration list for PBXNativeTarget "Pods-Video Audio TranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C115186D43975D34874FE181995B95 /* Debug */,
+				D5AA909846D8106FE032AC69E4F0DD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A086A6A8E0A37DD0FC892F865802DB64 /* Build configuration list for PBXAggregateTarget "MicrosoftCognitiveServicesSpeech-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B2CAECA69D943866E413E8F2F5F259 /* Debug */,
+				5994EB6D6EB4EC7C7303515C201556B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3BEFD501ECD6855EC766C582EE5144 /* Build configuration list for PBXNativeTarget "Pods-Video Audio Translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AB6F1EFF134CEFC4B36B79E6BAC0A4 /* Debug */,
+				99BBE5BD0BDA89BC09E47E6F8580B584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

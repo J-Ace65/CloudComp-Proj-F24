@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Video_Audio_Translator_Video_Audio_TranslatorUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Video_Audio_Translator_Video_Audio_TranslatorUITests
+@end
