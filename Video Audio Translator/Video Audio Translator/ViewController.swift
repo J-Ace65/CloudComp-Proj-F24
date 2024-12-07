@@ -14,11 +14,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var recognizer: SPXTranslationRecognizer?
     var pushStream: SPXPushAudioInputStream?
     var audioProcessingQueue: DispatchQueue!
+    var testAudioProcessingQueue: DispatchQueue!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         audioProcessingQueue = DispatchQueue(label: "com.audioProcessing.queue", qos: .userInitiated)
+        testAudioProcessingQueue = DispatchQueue(label: "com.audioProcessing.queue", qos: .userInitiated)
     }
     
     func setupUI() {
@@ -81,6 +83,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         extractAudio(from: url) { [weak self] audioURL in
             guard let self = self else { return }
             if let audioURL = audioURL {
+                self.detectSourceLanguage(on: audioURL)
                 self.startRealTimeTranslation(audioURL: audioURL)
                 self.videoPlayer?.play()
             } else {
@@ -128,13 +131,54 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             completion(nil)
         }
     }
+    func detectSourceLanguage(on wavFileURL: URL){
+        
+        guard let speechConfig = try? SPXSpeechConfiguration(subscription: subscriptionKey, region: serviceRegion) else {
+            updateLabels(detectedText: "Error: Invalid speech configuration.", translatedText: nil)
+            return
+        }
+        
+        pushStream = SPXPushAudioInputStream()
+        guard let audioConfig = SPXAudioConfiguration(streamInput: pushStream!) else {
+            updateLabels(detectedText: "Error: Failed to configure audio.", translatedText: nil)
+            return
+        }
+        
+        do {
+            let autoDetectConfig  = try SPXAutoDetectSourceLanguageConfiguration(["es-ES", "fr-FR", "zh-CN", "ja-JP"])
+            let speechRecognizer = try SPXSpeechRecognizer(speechConfiguration: speechConfig, autoDetectSourceLanguageConfiguration: autoDetectConfig, audioConfiguration: audioConfig)
+            
+            testAudioProcessingQueue.async {
+                self.streamAudioFromFile(url: wavFileURL)
+            }
+            
+            let result = try speechRecognizer.recognizeOnce()
+            if(result.reason == SPXResultReason.canceled){
+                let reasoning = try SPXCancellationDetails(fromCanceledRecognitionResult: result)
+                updateLabels(detectedText: "Error: Failed due to: " + (reasoning.errorDetails ?? "Cannot determine reason"), translatedText: nil)
+                return
+            }
+            else if(result.reason == SPXResultReason.recognizedSpeech){
+                let detectedLanguage =  SPXAutoDetectSourceLanguageResult(result)
+                print("The Detected Language was: " + (detectedLanguage.language ?? "COULD NOT DETERMINE!"))
+                
+            }
+            else{
+                print("There was an error.")
+            }
+            
+        } catch {
+            updateLabels(detectedText: "Error: Failed Language Detection.", translatedText: nil)
+            return
+        }
+    }
     
     func startRealTimeTranslation(audioURL: URL) {
         guard let speechConfig = try? SPXSpeechTranslationConfiguration(subscription: subscriptionKey, region: serviceRegion) else {
             updateLabels(detectedText: "Error: Invalid speech configuration.", translatedText: nil)
             return
         }
-        
+
         speechConfig.speechRecognitionLanguage = "es-ES" // Set source language
         speechConfig.addTargetLanguage("en") // Translate to English
         
