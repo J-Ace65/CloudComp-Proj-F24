@@ -195,7 +195,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         // Play/Pause button
         playPauseButton = UIButton(frame: CGRect(x: 20, y: 10, width: 40, height: 40))
-        playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         playPauseButton.tintColor = .white
         playPauseButton.addTarget(self, action: #selector(playPauseButtonClicked), for: .touchUpInside)
         controlsContainer.addSubview(playPauseButton)
