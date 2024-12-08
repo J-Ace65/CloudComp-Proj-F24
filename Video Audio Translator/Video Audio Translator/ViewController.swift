@@ -12,8 +12,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var translatedTextLabel: UILabel! // Label to show translated speech
     var selectVideoButton: UIButton! // Button to allow user to select a video
 
+    // Playback control buttons
+    var playPauseButton: UIButton! // Button to play or pause the video
+    var rewindButton: UIButton! // Button to rewind the video
+
     // Microsoft Cognitive Speech Service configuration
-    let subscriptionKey = "kaODxC3mez4BIHb9rFsGE0c3jvjH5E7cjAum1tSDOw4HF13Xd1cCJQQJ99AKACYeBjFXJ3w3AAAYACOGLGXl" // Your API subscription key
+    let subscriptionKey = "kaODxC3mez4BIHb9rFsGE0c3jvjH5E7cjAum1tSDOw4HF13Xd1cCJQQJ99AKACYeBjFXJ3w3AAAYACOGLGXl" // Replace with your API subscription key
     let serviceRegion = "eastus" // Azure service region
     var recognizer: SPXTranslationRecognizer? // Recognizer for real-time speech translation
     var audioProcessingQueue: DispatchQueue! // Queue for handling audio processing tasks
@@ -30,25 +34,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             
-            // If the overlay is already shown, do nothing
             if self.loadingOverlay != nil {
                 return
             }
 
-            // Create a semi-transparent overlay
             let overlay = UIView(frame: self.view.bounds)
             overlay.backgroundColor = UIColor.black.withAlphaComponent(0.6)
 
-            // Add a spinning activity indicator in the center
             let activityIndicator = UIActivityIndicatorView(style: .large)
             activityIndicator.center = overlay.center
             activityIndicator.startAnimating()
             overlay.addSubview(activityIndicator)
 
-            // Add the overlay to the main view
             self.view.addSubview(overlay)
-
-            // Keep a reference to the overlay
             self.loadingOverlay = overlay
         }
     }
@@ -56,7 +54,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // Function to hide the loading overlay
     func hideLoading() {
         DispatchQueue.main.async { [weak self] in
-            // Remove the overlay from the screen
             self?.loadingOverlay?.removeFromSuperview()
             self?.loadingOverlay = nil
         }
@@ -64,10 +61,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI() // Set up the user interface elements
-        audioProcessingQueue = DispatchQueue(label: "com.audioProcessing.queue", qos: .userInitiated) // Initialize a queue for audio processing
+        setupUI()
+        audioProcessingQueue = DispatchQueue(label: "com.audioProcessing.queue", qos: .userInitiated)
 
-        // Periodically update displayed text based on video playback time
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateDisplayedText), userInfo: nil, repeats: true)
     }
 
@@ -119,14 +115,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         selectVideoButton.layer.cornerRadius = 5
         selectVideoButton.addTarget(self, action: #selector(selectVideoButtonClicked), for: .touchUpInside)
         headerView.addSubview(selectVideoButton)
-        
+
         // Add a divider line below the header
         let dividerLine = UIView(frame: CGRect(x: 0, y: headerHeight, width: view.frame.width, height: 1))
         dividerLine.backgroundColor = UIColor(red: 27/255, green: 31/255, blue: 42/255, alpha: 1.0)
         self.view.addSubview(dividerLine)
         
         // Set up a section for "Detected Text"
-        let boxColor = UIColor(red: 27/255, green: 31/255, blue: 42/255, alpha: 1.0)
         let detectedTextTitle = UILabel(frame: CGRect(x: 20, y: headerHeight + 40, width: view.frame.width - 40, height: 30))
         detectedTextTitle.text = "Detected Text"
         detectedTextTitle.textColor = .white
@@ -135,7 +130,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.view.addSubview(detectedTextTitle)
 
         let detectedTextBox = UIView(frame: CGRect(x: 20, y: headerHeight + 80, width: view.frame.width - 40, height: 140))
-        detectedTextBox.backgroundColor = boxColor
+        detectedTextBox.backgroundColor = UIColor(red: 27/255, green: 31/255, blue: 42/255, alpha: 1.0)
         detectedTextBox.layer.cornerRadius = 10
         self.view.addSubview(detectedTextBox)
 
@@ -148,8 +143,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         detectedTextBox.addSubview(detectedTextLabel)
 
         // Set up a section for "Translated Text"
-        let translatedTextBox = UIView(frame: CGRect(x: 20, y: view.frame.height - 290, width: view.frame.width - 40, height: 140))
-        translatedTextBox.backgroundColor = boxColor
+        let translatedTextBox = UIView(frame: CGRect(x: 20, y: view.frame.height - 230, width: view.frame.width - 40, height: 140))
+        translatedTextBox.backgroundColor = UIColor(red: 27/255, green: 31/255, blue: 42/255, alpha: 1.0)
         translatedTextBox.layer.cornerRadius = 10
         self.view.addSubview(translatedTextBox)
 
@@ -161,21 +156,74 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         translatedTextLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         translatedTextBox.addSubview(translatedTextLabel)
 
-        let translatedTextTitle = UILabel(frame: CGRect(x: 20, y: view.frame.height - 140, width: view.frame.width - 40, height: 30))
+        let translatedTextTitle = UILabel(frame: CGRect(x: 20, y: view.frame.height - 80, width: view.frame.width - 40, height: 30))
         translatedTextTitle.text = "Translated Text"
         translatedTextTitle.textColor = .white
         translatedTextTitle.textAlignment = .center
         translatedTextTitle.font = UIFont.boldSystemFont(ofSize: 18)
         self.view.addSubview(translatedTextTitle)
-
+        
         // Display a center message while awaiting video selection
-        let centerMessageLabel = UILabel(frame: CGRect(x: 20, y: view.frame.height / 2 - 30, width: view.frame.width - 40, height: 100))
+        let centerMessageLabel = UILabel(frame: CGRect(x: 20, y: view.frame.height / 2, width: view.frame.width - 40, height: 100))
         centerMessageLabel.text = "Awaiting video selection..."
         centerMessageLabel.textColor = .white
         centerMessageLabel.textAlignment = .center
         centerMessageLabel.numberOfLines = 0
         centerMessageLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         self.view.addSubview(centerMessageLabel)
+
+        setupPlaybackControls()
+    }
+
+    func setupPlaybackControls() {
+        // Playback controls container
+        let controlsContainer = UIView(frame: CGRect(x: 20, y: view.frame.height - 317, width: view.frame.width - 40, height: 60))
+        controlsContainer.backgroundColor = UIColor(red: 210/255, green: 90/255, blue: 120/255, alpha: 1.0)
+        controlsContainer.layer.cornerRadius = 10
+        controlsContainer.isHidden = true // Initially hidden
+        controlsContainer.tag = 999 // Tag to identify the container later
+        self.view.addSubview(controlsContainer)
+        
+        // Centered "Playback Controls" label
+        let controlsLabel = UILabel(frame: CGRect(x: 0, y: 0, width: controlsContainer.frame.width, height: 30))
+        controlsLabel.center = CGPoint(x: controlsContainer.frame.width / 2, y: controlsContainer.frame.height / 2)
+        controlsLabel.text = "Time Travel Console"
+        controlsLabel.textAlignment = .center
+        controlsLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        controlsLabel.textColor = .white
+        controlsContainer.addSubview(controlsLabel)
+        
+        // Play/Pause button
+        playPauseButton = UIButton(frame: CGRect(x: 20, y: 10, width: 40, height: 40))
+        playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        playPauseButton.tintColor = .white
+        playPauseButton.addTarget(self, action: #selector(playPauseButtonClicked), for: .touchUpInside)
+        controlsContainer.addSubview(playPauseButton)
+
+        // Rewind button
+        rewindButton = UIButton(frame: CGRect(x: controlsContainer.frame.width - 60, y: 10, width: 40, height: 40))
+        rewindButton.setImage(UIImage(systemName: "gobackward"), for: .normal)
+        rewindButton.tintColor = .white
+        rewindButton.addTarget(self, action: #selector(rewindButtonClicked), for: .touchUpInside)
+        controlsContainer.addSubview(rewindButton)
+    }
+
+    @objc func playPauseButtonClicked() {
+        guard let player = videoPlayer else { return }
+        if player.timeControlStatus == .paused {
+            player.play()
+            playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+        } else {
+            player.pause()
+            playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        }
+    }
+
+    @objc func rewindButtonClicked() {
+        guard let player = videoPlayer else { return }
+        let currentTime = CMTimeGetSeconds(player.currentTime())
+        let rewindTime = max(currentTime - 10, 0) // Rewind 10 seconds or to the start
+        player.seek(to: CMTime(seconds: rewindTime, preferredTimescale: 600))
     }
     @objc func selectVideoButtonClicked() {
         // Open the photo library to let the user select a video
@@ -195,6 +243,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         picker.dismiss(animated: true) {
             self.playVideo(from: mediaURL) // Play the selected video
+        }
+    }
+
+    func showPlaybackControls() {
+        // Find the playback controls container by its tag and unhide it
+        if let controlsContainer = self.view.viewWithTag(999) {
+            controlsContainer.isHidden = false
         }
     }
 
@@ -220,6 +275,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     }
                     self.startRealTimeTranslation(audioURL: audioURL, sourceLanguage: detectedLanguage)
                     self.videoPlayer?.play() // Play the video once setup is complete
+                    self.showPlaybackControls() // Show the playback controls
                 }
             } else {
                 self.updateLabels(detectedText: "Error: No audio track found.", translatedText: nil)
